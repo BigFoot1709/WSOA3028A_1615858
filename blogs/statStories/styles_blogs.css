@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background: #012340;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: #e6e6e6;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    background: #032859;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 35px;
+
+    position: relative;
+}
+
+nav a {
+    color: #8ec0ef;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.back_button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    background-color: #032859;
+    border: none;
+    color: #8ec0ef;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.back_button:hover {
+    color: #ffffff;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+p a {
+    text-decoration: underline;
+    color: #8ec0ef;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+figcaption a {
+    text-decoration: underline;
+    color: #8ec0ef;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 55px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 44px;
+    text-align: center;
+    text-decoration: none;
+}
