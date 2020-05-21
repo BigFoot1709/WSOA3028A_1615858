@@ -122,3 +122,14 @@ a strong {
     font-weight: 300;
     text-align: center;
 }
+
+ul li a {
+    text-decoration: underline;
+    color: #8ec0ef;
+}
+
+aside {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+}
