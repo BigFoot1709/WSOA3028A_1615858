@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    background: #a3b3f7;
+    background: #012340;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    /* color: #e6e6e6; */
+    color: #e6e6e6;
 }
 
 .container {
@@ -72,4 +72,32 @@ nav a:hover {
 
 .back_button:hover {
     color: #ffffff;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+p a {
+    text-decoration: underline;
+    color: #8ec0ef;
+}
+
+a {
+    text-decoration: underline;
+    color: #8ec0ef;
+}
+
+h2 a {
+    font-size: 44px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 }
