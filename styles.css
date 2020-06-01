@@ -101,3 +101,27 @@ h1 {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.row::after {
+    clear: both;
+    display: table;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 10px;
+}
+
+.flip div {
+    transform: scaleX(-1);
+}
