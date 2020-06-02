@@ -13,58 +13,37 @@
     <script src=".\Scripts\testbutton.js" type="module" async></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="stylesnew.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=deive=width, initial-scale=1.0">
 
 </head>
 
 <body>
     <header>
-        <section id="navbar_header"></section>
-        <script src=".\Scripts\home_navbar.js"></script>
+        <h1 class="logo">StevenStat</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="./blogs/statStories">Home</a></li>
+                <li><a href="./blogs/statStories">StatStories</a></li>
+                <li><a href="./steven-stat-about.html">About</a></li>
+                <li><a href="./steven-stat-contact.html">Contact</a></li>
+                <li><a href="./blogs/courseBlogs">Blogs</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
 
-    <main align="center">
-        <section>
-            <h1>Home</h1>
-            <div class="row">
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="70">
-                </div>
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="115">
-                </div>
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="150">
-                </div>
-                <div class="column" class="flip">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="175">
-                </div>
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="200">
-                </div>
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="250">
-                </div>
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="200">
-                </div>
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="175">
-                </div>
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="150">
-                </div>
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="115">
-                </div>
-                <div class="column">
-                    <img src="Images\cricketballs.png" alt="2007 ICC World Twenty20 Logo" width="70">
-                </div>
-            </div>
+    <!-- <header>
+        <section id="navbar_header"></section>
+        <script src=".\Scripts\home_navbar.js"></script>
+    </header> -->
 
-        </section>
-
+    <section class="contentleft">
         <section>
             <h2>
                 <a href=".\blogs\statStories">
@@ -106,8 +85,11 @@
                 </p>
             </section>
         </section>
-        <br>
+    </section>
 
+
+
+    <section class="contentright" align="right">
         <section>
             <h2>
                 <a href=".\blogs\courseBlogs">
@@ -117,11 +99,7 @@
 
             <section>
                 <img src="Images\blogicon.png" alt="Blogs Icon" width="400">
-
-                <!-- 
-                
-
-                <a href="blogs\courseBlogs\metaphor-design-for-user-interfaces-blog08.html">Metaphor Design for User
+                <!-- <a href="blogs\courseBlogs\metaphor-design-for-user-interfaces-blog08.html">Metaphor Design for User
                     Interfaces</a> -
                 <strong>Devan Gray</strong> (<time datetime="2020-04-19">19 April 2020</time>)
                 <br>
@@ -185,7 +163,7 @@
 
             </section>
         </section>
-    </main>
+    </section>
 
 </body>
 
