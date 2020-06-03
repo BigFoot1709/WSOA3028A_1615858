@@ -1,15 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
-:root {
-    --backgroundnavbar: #032859;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body {
     padding: 0px;
     margin: 0;
@@ -35,10 +23,6 @@ header {
     position: absolute;
     top: -9999px;
     left: -9999px;
-}
-
-.nav-toggle:focus~.nav-toggle-label {
-    outline: 3px solid rgba(lightblue, .75);
 }
 
 .nav-toggle-label {
