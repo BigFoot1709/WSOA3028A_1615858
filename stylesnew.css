@@ -298,7 +298,6 @@ h1 {
 	font-size: 50px;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 
 .btn {
@@ -314,4 +313,9 @@ h1 {
 	color: white;
 	background: #09418b;
 	transition: .5s;
+}
+
+article {
+	padding-left: 20%;
+	padding-right: 20%;
 }
