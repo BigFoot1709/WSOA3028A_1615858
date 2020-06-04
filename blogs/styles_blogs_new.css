@@ -7,6 +7,11 @@ body {
     color: #e6e6e6;
 }
 
+.logo_a {
+    text-decoration: none;
+    color: white;
+}
+
 .filler {
     padding: 60px 0px;
 }
@@ -206,7 +211,7 @@ nav a:hover {
 
 .content .main-content .lastest-statstories-title {
     margin: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
 }
 
 .content .sidebar {

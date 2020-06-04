@@ -2,7 +2,7 @@ const header_section = document.getElementById("navbar_header");
 
 if (header_section.textContent == "home") {
     header_section.innerHTML = [
-        "<h1 class=\"logo\">StevenStat</h1>",
+        "<h1 class=\"logo\"><a href=\"./index.html\" class=\"logo_a\">StevenStat</a></h1>",
         "<input type=\"checkbox\" id=\"nav-toggle\" class=\"nav-toggle\">",
         "<nav>",
         "<ul>",
@@ -21,7 +21,7 @@ if (header_section.textContent == "home") {
 
 if (header_section.textContent == "statstories") {
     header_section.innerHTML = [
-        "<h1 class=\"logo\">StevenStat</h1>",
+        "<h1 class=\"logo\"><a href=\"../../index.html\" class=\"logo_a\">StevenStat</a></h1>",
         "<input type=\"checkbox\" id=\"nav-toggle\" class=\"nav-toggle\">",
         "<nav>",
         "<ul>",
@@ -40,7 +40,7 @@ if (header_section.textContent == "statstories") {
 
 if (header_section.textContent == "blogs") {
     header_section.innerHTML = [
-        "<h1 class=\"logo\">StevenStat</h1>",
+        "<h1 class=\"logo\"><a href=\"../../index.html\" class=\"logo_a\">StevenStat</a></h1>",
         "<input type=\"checkbox\" id=\"nav-toggle\" class=\"nav-toggle\">",
         "<nav>",
         "<ul>",
