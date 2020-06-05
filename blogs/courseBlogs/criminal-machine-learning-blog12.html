@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Digital Divide</title>
+
+    <meta name="description" content="The impact of The Digital Divide and what is being done about it.">
+    <meta name="keywords" content="Blog,Devan Gray,2020">
+    <meta name="author" content="Devan Gray">
+
+    <link rel="icon" href="..\..\Images\cricketballicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="..\styles_blogs_new.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+    <!-- NAV BAR NAV BAR NAV BAR NAV BAR -->
+
+    <header id="navbar_header">blogs</header>
+    <script src="../../Scripts/navbar.js"></script>
+    <section>
+        <section class="filler"></section>
+    </section>
+
+    <!-- NAV BAR NAV BAR NAV BAR NAV BAR -->
+
+    <main>
+
+        <section>
+            <h1>
+                Blog 12
+            </h1>
+            <h2>
+                Criminal Machine Learning
+            </h2>
+            <aside>Written by Devan Gray - Thursday, June 4, 2020</aside>
+        </section>
+
+        <article>
+            <section>
+                <p>Link to Article – <a
+                        href="https://callingbullshit.org/case_studies/case_study_criminal_machine_learning.html">Case
+                        Study: Criminal machine learning</a></p>
+                <h4>Background</h4>
+                <p>
+                    Engineering researchers Xiaolin Wu and Xi Zhang posted an article entitled “Automated Inference on
+                    Criminality using Face Images”. In their research, Wu and Zhang use machine learning techniques to
+                    detect human face features that are connected with “criminality” – and claim to have algorithms that
+                    can detect criminals from non-criminals just from a simple headshot picture of a person with nearly
+                    90% accuracy. Wu and Zhang revisit research done by an Italian doctor, named Cesare Lombroso, done
+                    back in the 19th century. This got the media’s attention as it had huge ethical challenges
+                    associated with it. How could you say someone is a criminal before they have even done anything
+                    wrong in the first place?
+                </p>
+            </section>
+
+            <section>
+                <h4>The Problems</h4>
+                <p>
+                    “Unlike a human examiner/judge, a computer vision algorithm or classifier has absolutely no
+                    subjective baggages [sic], having no emotions, no biases whatsoever due to past experience, race,
+                    religion, political doctrine, gender, age, etc., no mental fatigue, no preconditioning of a bad
+                    sleep or meal. The automated inference on criminality eliminates the variable of meta-accuracy (the
+                    competence of the human judge/examiner) all together.” (Wu and Zhang,2016)
+                </p>
+                <p>
+                    The first of their problems is the training set they used for the machine learning. Wu and Zhang
+                    collected a database of over 1,800 headshot photos of Chinese men aged 18-55, with no distinguishing
+                    facial hair, scars, or tattoos. Over 700 of these photos were pictures of criminals, provide by
+                    police departments and the rest (1,100 photos) were non-criminals collected from various sources
+                    across the internet using a web scraper. The problem that can be used first and the first form of
+                    bias shown is that the images of the non-criminals appear to have been posted to websites that look
+                    to be for promotional purposes while the photos of the criminals are their ID photos. Which shows
+                    straight away that the individuals presented in their IDs are not going to be shown in a positive
+                    light as compared to those who are trying their best to do so (and are allowed to smile in their
+                    presented photo).
+                </p>
+                <p>
+                    The second problem and another source of bias is that the photos of criminals are in fact photos of
+                    convicted criminals and therefore showing the facial features that made then convicted by the jury
+                    that they must have faced, instead of facial features shown that are connected to the crime that
+                    they supposedly committed. This means their algorithms would detect criminals that would have the
+                    highest chance of being convicted by a jury which is doing the exact thing that said their
+                    algorithms did not do.
+                </p>
+            </section>
+
+            <section>
+                <h4>Conclusion</h4>
+                <p>
+                    You do not need to understand the complex nature of the machine learning algorithms at all when you
+                    know that a machine learning algorithm can only be affective if good and reliable data is put into
+                    its training data. Machine learning algorithms as good as they are right now and how effective they
+                    are cannot be blamed in this scenario but only the data it is feeding from. If you going to put bias
+                    and loosely found evidence into the training data you are going to get unsupported results, the
+                    “garbage -in garbage-out” principle. But a great scenario in seeing what a machine learning
+                    algorithm is capable of and might expire others out their to do something different. Think it is
+                    safe to say we do not have to worry about being convicted for crimes just from our photo of
+                    ourselves just yet.
+                </p>
+            </section>
+
+
+            <section>
+                <h4>
+                    References
+                </h4>
+                <ul>
+                    <li>
+                        Bergstrom, C. and West, J., 2020. Case Study — Criminal Machine Learning. [online]
+                        Callingbullshit.org. Available at:
+                        <a
+                            href="https://callingbullshit.org/case_studies/case_study_criminal_machine_learning.html">https://callingbullshit.org/case_studies/case_study_criminal_machine_learning.html</a>
+                        [Accessed
+                        4
+                        June 2020].
+                    </li>
+                </ul>
+            </section>
+
+        </article>
+
+    </main>
+
+</body>
+
+
+</html>

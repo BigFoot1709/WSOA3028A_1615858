@@ -40,6 +40,7 @@
             </h2>
             <aside>Written by Devan Gray - Wednesday, April 22, 2020</aside>
             <aside>Edited - Thursday, May 21, 2020</aside>
+            <aside>Edited Again - Wednesday, June 3, 2020</aside>
         </section>
 
         <article>
@@ -51,7 +52,7 @@
                 <figure align="center">
                     <img src="..\..\Images\java3-blog.PNG"
                         alt="A screenshot of the navigation bar of the Steven Stat Website. As seen above on the website."
-                        width="1100">
+                        width="1050">
                     <figcaption> A screenshot of the navigation bar of the Steven Stat Website. As seen above on the
                         website.
                     </figcaption>
@@ -59,7 +60,7 @@
 
                 <figure align="center">
                     <img src="..\..\Images\java1-blog.PNG" alt="The required html code needed to run the navigation bar (seen in the image above) from
-                        this blog webpage." width="960">
+                        this blog webpage." width="650">
                     <figcaption> The required html code needed to run the navigation bar (seen in the image above) from
                         this blog webpage.
                     </figcaption>
@@ -67,10 +68,10 @@
 
                 <p>
                     The above navigation bar along with its html code needs to appear on every page on this website.
-                    These 17 lines of html code needed to be copy and pasted on every home page in the website’s file
-                    directory (The Home Page, The About Page and The Contact Page). A different set of 17 lines were
+                    These 20 lines of html code needed to be copy and pasted on every home page in the website’s file
+                    directory (The Home Page, The About Page and The Contact Page). A different set of 20 lines were
                     needed for all the course blog pages and another set for all the StatStory pages. This was getting
-                    pretty messy and clumsy when trying to work when crating new webpages as these 17 lines were needed
+                    pretty messy and clumsy when trying to work when crating new webpages as these 20 lines were needed
                     on every page. So, after learning DOM Manipulation through JS I was able to create some sort of
                     solution to this problem.
                 </p>
@@ -81,7 +82,7 @@
 
                 <figure align="center">
                     <img src="..\..\Images\java2-blog.PNG" alt="The reduced html code needed to run the navigation bar with JavaScript from
-                    this blog webpage." width="650">
+                    this blog webpage." width="550">
                     <figcaption> The reduced html code needed to run the navigation bar with JavaScript from
                         this blog webpage.
                     </figcaption>
@@ -89,32 +90,36 @@
 
                 <p>
                     So, if I created a single empty section tag on the page in html (1 single line of code) I could edit
-                    it with a JS script (the second single line of code). With the JavaScript file
-                    <em>blogs_navbar.js</em> only 2 lines of html need to be copied onto every
+                    it with a single JS script (the second single line of code). With the JavaScript file
+                    <em>navbar.js</em> only these 5 lines of html need to be copied onto every
                     webpage.
                 </p>
 
                 <figure align="center">
-                    <img src="..\..\Images\java4-blog.PNG" alt="The JavaScript file. The contents of blogs_navbar.js."
-                        width="960">
-                    <figcaption> The JavaScript file. The contents of <em>blogs_navbar.js</em>.
+                    <img src="..\..\Images\java4-blog.PNG" alt="The JavaScript file. The contents of navbar.js."
+                        width="900">
+                    <figcaption> The JavaScript file. The contents of <em>navbar.js</em>.
                     </figcaption>
                 </figure>
 
                 <p>
-                    In the above displayed JS file, I get the empty section tag out of the html document and change its
-                    inner content. The new inner content of the empty section becomes the original 17 lines of html code
-                    I used previously – I combine them all into 1 single string with the .join() command in JS. I am
+                    In the above displayed JS file, I get the empty section tag out of the html document, check which
+                    page it is on within the website structure and then change its
+                    inner content. The new inner content of the empty section becomes the original 20 lines of html code
+                    I used previously depended on which webpage we are on – I combine them all into 1 single string with
+                    the .join() command in JS. I am
                     therefore creating the navigation bar in a small package of sorts. I then
-                    have 1 JS file per set of navigation lines I need for the different pages of my website (home pages,
-                    blog pages and statstory pages). I can then use the respective JS file I need and put 2 lines of
-                    code for my navigation bar and not need to worry about links not finding pages.
+                    have 1 JS file for all the different pages of my website (home pages,
+                    blog pages and statstory pages). I can then use the respective JS file I need and put 5 lines of
+                    code for my navigation bar and not need to worry about links not finding pages. With this single JS
+                    script I am now able to change the nav bar design and its functions in
+                    one place and it will be changed on every webpage of this website.
                 </p>
 
             </section>
         </article>
 
-        
+
 
     </main>
 
