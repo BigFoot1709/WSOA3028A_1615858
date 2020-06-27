@@ -319,7 +319,7 @@ article {
 }
 
 .weather_temp {
-	font-size: 150px;
+	font-size: 125px;
 	font-weight: bold;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -368,4 +368,8 @@ article {
 .today_date {
 	font-size: 40px;
 	margin: 20px;
+}
+
+.about-main-image {
+	width: 100%;
 }

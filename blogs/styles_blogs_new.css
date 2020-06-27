@@ -357,3 +357,23 @@ aside {
     font-weight: 300;
     text-align: center;
 }
+
+.SS1-image1 {
+    width: 720px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .SS1-image1 {
+        width: 100%;
+    }
+}
+
+.SS1-video {
+    width: 720px;
+}
+
+@media only screen and (max-width: 800px) {
+    .SS1-video {
+        width: 100%;
+    }
+}
