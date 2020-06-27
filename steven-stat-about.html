@@ -10,6 +10,8 @@
 
     <link rel="icon" href="Images\cricketballicon.png">
 
+    <script type="module" src="Scripts/weather_api.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="Styles/styles_new.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
@@ -56,6 +58,29 @@
             </p> -->
         </article>
 
+        <section>
+            <h3 class="lastest-statstories-title" align="center">
+                Weather at the Wanderers
+            </h3>
+        </section>
+
+        <section>
+            <h3 id="today_date" class="today_date" align="center"></h3>
+            <article>
+                <p align="center" id="weather_temp" class="weather_temp"></p>
+                <p align="center" id="weather_temp_feel" class="weather_temp_feel"></p>
+                <p align="center" id="weather_humidity" class="weather_humidity"></p>
+                <p align="center" id="weather_wind" class="weather_humidity"></p>
+                <p align="center" id="weather_min" class="weather_min"></p>
+                <p align="center" id="weather_max" class="weather_max"></p>
+                <p align="center" id="weather_sunrise" class="weather_sunrise"></p>
+                <p align="center" id="weather_sunset" class="weather_sunset"></p>
+            </article>
+        </section>
+
+        <h5 align="center">
+            <i>Weather Figures done using the <a href="https://openweathermap.org/city/993800">OpenWeather</a> API</i>
+        </h5>
     </main>
 
 </body>

@@ -273,6 +273,11 @@ h4 a {
 	text-decoration: none;
 }
 
+h5 {
+	font-size: 20px;
+	text-decoration: none;
+}
+
 h3 {
 	font-size: 50px;
 }
@@ -311,4 +316,56 @@ h1 {
 article {
 	padding-left: 20%;
 	padding-right: 20%;
+}
+
+.weather_temp {
+	font-size: 150px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.weather_sunrise {
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.weather_sunset {
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.weather_min {
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #67a9e2;
+}
+
+.weather_max {
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #c4b91d;
+}
+
+.weather_humidity {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.weather_temp_feel {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.today_date {
+	font-size: 40px;
+	margin: 20px;
 }
