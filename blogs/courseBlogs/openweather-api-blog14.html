@@ -4,9 +4,12 @@
 <head>
     <title>Implicit Bias in Software</title>
 
-    <meta name="description" content="A look at how Implicit Bias has an effect on software development.">
+    <meta name="description"
+        content="A look at how my weather details displayed on the about page of this website was made through JavaScript, DOM Manipulation and with the use of the OpenWeather API.">
     <meta name="keywords" content="Blog,Devan Gray,2020">
     <meta name="author" content="Devan Gray">
+
+    <script type="module" src="../../Scripts/weather_api.js"></script>
 
     <link rel="icon" href="..\..\Images\cricketballicon.png">
 
@@ -42,43 +45,121 @@
 
         <article>
             <section>
-                <h4>Background</h4>
-                <p>
+                <h4>The Displayed Data</h4>
+            </section>
+        </article>
 
+        <section>
+            <h3 id="today_date" class="today_date" align="center"></h3>
+            <article>
+                <p align="center" id="weather_temp" class="weather_temp"></p>
+                <p align="center" id="weather_temp_feel" class="weather_temp_feel"></p>
+                <p align="center" id="weather_humidity" class="weather_humidity"></p>
+                <p align="center" id="weather_wind" class="weather_humidity"></p>
+                <p align="center" id="weather_min" class="weather_min"></p>
+                <p align="center" id="weather_max" class="weather_max"></p>
+                <p align="center" id="weather_sunrise" class="weather_sunrise"></p>
+                <p align="center" id="weather_sunset" class="weather_sunset"></p>
+            </article>
+        </section>
+
+        <h5 align="center">
+            <i>Weather Figures done using the <a href="https://openweathermap.org/city/993800">OpenWeather</a> API.</i>
+        </h5>
+
+        <article>
+            <section>
+                <p>
+                    Above is the displayed live and up-to-date weather data for Johannesburg (once done reading this
+                    blog try
+                    refresh the page and see if the weather has changed) that is shown on the about
+                    page of this
+                    personal website. This
+                    blog is a short explanation of how it was achieved. Three things are needed for this: the HTML, the
+                    JavaScript, and the CSS.
+                </p>
+                <h4>The HTML</h4>
+                <figure align="center">
+                    <img src="..\..\Images\blog14_1.PNG"
+                        alt="A screenshot the HTML code needed for displaying the weather data." width="1050">
+                    <figcaption> A screenshot the HTML code needed for displaying the weather data.
+                    </figcaption>
+                </figure>
+                <p>
+                    Shown above is the HTML needed for the weather information, each empty paragraph has been given an
+                    “id” and “class” corresponding to the certain piece of weather information that it will display. The
+                    “id” will be used for the JavaScript code and the “class” will be used for styling with CSS code.
+                </p>
+                <h4>The JavaScript (and the API)</h4>
+                <figure align="center">
+                    <img src="..\..\Images\blog14_3.PNG"
+                        alt="The API Call instruction in the OpenWeather API Documentation." width="650">
+                    <figcaption> The API Call instruction in the OpenWeather API Documentation.
+                    </figcaption>
+                </figure>
+                <p>
+                    Next, we need to access the OpenWeather API. OpenWeather Ltd is a British-based tech company that
+                    provides weather and satellite data worldwide. OpenWeather collects and processes raw data from a
+                    variety of sources and gives its customers access to the data archive.
+                </p>
+                <p>
+                    In the image shown above is the OpenWeather API Document instruction for making an API call to
+                    retrieve data from there database about the weather in a certain city given that city’s ID. I went
+                    and found that Johannesburg’s ID is <b>993800</b>. To get an API Key all I had to do was make a free
+                    account with OpenWeather and sign into their website.
+                </p>
+                <figure align="center">
+                    <img src="..\..\Images\blog14_2.PNG"
+                        alt="The fetch command in the JavaScript file called weather_api.js." width="1050">
+                    <figcaption> The fetch command in the JavaScript file called weather_api.js.
+                    </figcaption>
+                </figure>
+                <p>
+                    We then need to make a fetch command in JavaScript in order to make the API Call and translate the
+                    given data into a json form for better access to the information later on when we need each certain
+                    piece of weather information such as temperature, wind speed, humidity etc. We put the URL required
+                    for the API Call into the fetch command with the City ID and API Key (I had to blur out my API Key
+                    as OpenWeather suggested I keep my personal API Key private as we do not want other people having
+                    access to OpenWeather data through my API Key) and convert the data into
+                    json form using the .json() command. (All shown in the image just above.)
+                </p>
+                <figure align="center">
+                    <img src="..\..\Images\blog14_4.PNG"
+                        alt="The function used in the JavaScript file called weather_api.js to extract the data from the OpenWeather API."
+                        width="1050">
+                    <figcaption> The function used in the JavaScript file called weather_api.js to extract the data from
+                        the OpenWeather API.
+                    </figcaption>
+                </figure>
+                <p>
+                    Above is all the JavaScript code needed for the extraction of the relevant pieces of weather
+                    information needed. Some of the data would come in weird and wonderful formats that needed to be
+                    reformatted into more readable values – for example, the temperature readings given by the
+                    OpenWeather API were given in Kelvin and needed to be converted into Degrees Celsius, another
+                    example being that the time values given by the OpenWeather API were in Unix time format (Unix time
+                    is a single signed number that increments every second, which makes it easier for computers to store
+                    and manipulate than conventional date systems. The Unix starting value of 0 is the time 00:00:00 UTC
+                    on 1 January 1970 and therefore Unix time is the time is seconds since that starting time) and
+                    needed to be converted to a readable time format. DOM Manipulation is then used on the empty
+                    paragraphs in the HTML to give their displayed values to the values pulled from the OpenWeather API.
+                </p>
+                <h4>The CSS</h4>
+                <figure align="center">
+                    <img src="..\..\Images\blog14_5.PNG"
+                        alt="The CSS code needed for the styling of the displayed values." width="350">
+                    <figcaption> The CSS code needed for the styling of the displayed values.
+                    </figcaption>
+                </figure>
+                <p>
+                    The CSS code displayed above is simply used for the styling and formatting of the values displayed
+                    on the website page. For example, the different colouring of the minimum and maximum temperatures of
+                    the day.
                 </p>
             </section>
-
-            <section>
-                <h4>The Problems</h4>
-                <p>
-
-                </p>
-            </section>
-
-            <section>
-                <h4>Conclusion</h4>
-                <p>
-
-                </p>
-            </section>
-
-
-            <section>
-                <h4>
-                    References
-                </h4>
-                <ul>
-                    <li>
-
-                    </li>
-                </ul>
-            </section>
-
         </article>
 
     </main>
 
 </body>
-
 
 </html>

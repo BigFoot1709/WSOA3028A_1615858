@@ -377,3 +377,62 @@ aside {
         width: 100%;
     }
 }
+
+.weather_temp {
+    font-size: 125px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.weather_sunrise {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.weather_sunset {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.weather_min {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #67a9e2;
+    text-align: center;
+}
+
+.weather_max {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #c4b91d;
+    text-align: center;
+}
+
+.weather_humidity {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.weather_temp_feel {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.today_date {
+    font-size: 40px;
+    margin: 20px;
+}

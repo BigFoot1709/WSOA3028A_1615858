@@ -1,9 +1,10 @@
-fetch("https://api.openweathermap.org/data/2.5/weather?id=993800&appid=0d89da3efce536b51b38bbfc8cab7c05")
-    .then((r) => r.json())
-    .then((weather) => {
-        console.log(weather);
-        handleWeatherDetails(weather);
-    });
+
+    fetch("https://api.openweathermap.org/data/2.5/weather?id=993800&appid=0d89da3efce536b51b38bbfc8cab7c05")
+        .then((r) => r.json())
+        .then((weather) => {
+            console.log(weather);
+            handleWeatherDetails(weather);
+        });
 
 const handleWeatherDetails = (WeatherDetails) => {
 
@@ -36,7 +37,6 @@ const handleWeatherDetails = (WeatherDetails) => {
     var date = new Date(sunrisetime * 1000);
     var hours = date.getHours();
     var minutes = "0" + date.getMinutes();
-    var seconds = "0" + date.getSeconds();
 
     var sunrisetimeformattedTime = hours + ':' + minutes.substr(-2) + " AM";
 
@@ -46,7 +46,6 @@ const handleWeatherDetails = (WeatherDetails) => {
     var date = new Date(sunsettime * 1000);
     var hours = date.getHours();
     var minutes = "0" + date.getMinutes();
-    var seconds = "0" + date.getSeconds();
 
     var sunsettimeformattedTime = hours + ':' + minutes.substr(-2) + " PM";
 
